@@ -1,0 +1,1763 @@
+{
+	"info": {
+		"_postman_id": "e0d09c3a-c218-49d7-8ed9-9331d7b666a1",
+		"name": "apps2pay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32934751"
+	},
+	"item": [
+		{
+			"name": "movie",
+			"item": [
+				{
+					"name": "Get All Movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY0Mjk1MWY2LWZhYmYtNGMxNC1hNGZkLTk2YmU3NGEzZmUwYyIsImV4cCI6MTcxNjMyMTY3M30.uRHmvkY4kvoF7bKLbfScJzZKV93Ftgxb9CmpSvy_rTk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/movies",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/movies",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"movies"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:24:04 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"all movies\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"title\": \"Inception\",\n            \"genre\": \"Sci-Fi\",\n            \"duration\": 148,\n            \"rating\": 8.8,\n            \"release_date\": \"2010-07-16T00:00:00+07:00\",\n            \"description\": \"A thief who steals corporate secrets through the use of dream-sharing technology.\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"The Dark Knight\",\n            \"genre\": \"Action\",\n            \"duration\": 152,\n            \"rating\": 9,\n            \"release_date\": \"2008-07-18T00:00:00+07:00\",\n            \"description\": \"When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Interstellar\",\n            \"genre\": \"Adventure\",\n            \"duration\": 169,\n            \"rating\": 8.6,\n            \"release_date\": \"2014-11-07T00:00:00+07:00\",\n            \"description\": \"A team of explorers travel through a wormhole in space in an attempt to ensure humanity survival.\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"The Matrix\",\n            \"genre\": \"Sci-Fi\",\n            \"duration\": 136,\n            \"rating\": 8.7,\n            \"release_date\": \"1999-03-31T00:00:00+07:00\",\n            \"description\": \"A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Forrest Gump\",\n            \"genre\": \"Drama\",\n            \"duration\": 142,\n            \"rating\": 8.8,\n            \"release_date\": \"1994-07-06T00:00:00+07:00\",\n            \"description\": \"The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold through the perspective of an Alabama man.\"\n        },\n        {\n            \"id\": 6,\n            \"title\": \"The Shawshank Redemption\",\n            \"genre\": \"Drama\",\n            \"duration\": 142,\n            \"rating\": 9.3,\n            \"release_date\": \"1994-09-23T00:00:00+07:00\",\n            \"description\": \"Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.\"\n        },\n        {\n            \"id\": 7,\n            \"title\": \"Pulp Fiction\",\n            \"genre\": \"Crime\",\n            \"duration\": 154,\n            \"rating\": 8.9,\n            \"release_date\": \"1994-10-14T00:00:00+07:00\",\n            \"description\": \"The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.\"\n        },\n        {\n            \"id\": 8,\n            \"title\": \"Fight Club\",\n            \"genre\": \"Drama\",\n            \"duration\": 139,\n            \"rating\": 8.8,\n            \"release_date\": \"1999-10-15T00:00:00+07:00\",\n            \"description\": \"An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.\"\n        },\n        {\n            \"id\": 9,\n            \"title\": \"The Godfather\",\n            \"genre\": \"Crime\",\n            \"duration\": 175,\n            \"rating\": 9.2,\n            \"release_date\": \"1972-03-24T00:00:00+07:00\",\n            \"description\": \"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.\"\n        },\n        {\n            \"id\": 10,\n            \"title\": \"The Lord of the Rings: The Return of the King\",\n            \"genre\": \"Fantasy\",\n            \"duration\": 201,\n            \"rating\": 8.9,\n            \"release_date\": \"2003-12-17T00:00:00+07:00\",\n            \"description\": \"Gandalf and Aragorn lead the World of Men against Sauron army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Movie By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmODRkMmU4LWU5YzUtNDIzZC1iZGViLWNmMTZiMTUzZDQ5OSIsImV4cCI6MTcxNjM1NTQxNn0.l2cHIaIGOfgRS8rs0L3MHCrVd7wp6HwCVV15ByOVyd0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/movies/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/movies/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"movies",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:24:18 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "267"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"movie found\",\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"Inception\",\n        \"genre\": \"Sci-Fi\",\n        \"duration\": 148,\n        \"rating\": 8.8,\n        \"release_date\": \"2010-07-16T00:00:00+07:00\",\n        \"description\": \"A thief who steals corporate secrets through the use of dream-sharing technology.\"\n    }\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/movies/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"movies",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:24:52 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "48"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"movie not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ4MjVlNGNjLTc1YzktNGJkMC1iOWVhLTEyOTBjNDA4MThkZiIsImV4cCI6MTcxNjMyNDgzMn0.sovjd3zc6oHnqmKuzXWF8D8JCydVbXsjAeYJVlhsvy4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Test\",\n    \"genre\": \"test\",\n    \"duration\": 120,\n    \"rating\": 4.0,\n    \"release_date\": \"2024-05-22T00:00:00Z\",\n    \"description\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/movies",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Test\",\n    \"genre\": \"test\",\n    \"duration\": 120,\n    \"rating\": 4.0,\n    \"release_date\": \"2024-05-22T00:00:00Z\",\n    \"description\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/movies",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"movies"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:25:03 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "184"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"movie created\",\n    \"data\": {\n        \"id\": 11,\n        \"title\": \"Test\",\n        \"genre\": \"test\",\n        \"duration\": 120,\n        \"rating\": 4,\n        \"release_date\": \"2024-05-22T07:00:00+07:00\",\n        \"description\": \"test\"\n    }\n}"
+						},
+						{
+							"name": "400",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Test\",\n    \"genre\": \"test\",\n    \"duration\": 120,\n    \"rating\": 4.0,\n    \"release_date\": \"2024-05-22T00:00\",\n    \"description\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/movies",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"movies"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:25:21 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "278"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"validation failed\",\n    \"error\": \"code=400, message=parsing time \\\"2024-05-22T00:00\\\" as \\\"2006-01-02T15:04:05Z07:00\\\": cannot parse \\\"\\\" as \\\":\\\", internal=parsing time \\\"2024-05-22T00:00\\\" as \\\"2006-01-02T15:04:05Z07:00\\\": cannot parse \\\"\\\" as \\\":\\\"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ4MjVlNGNjLTc1YzktNGJkMC1iOWVhLTEyOTBjNDA4MThkZiIsImV4cCI6MTcxNjMyNjM2M30.AoJpJxLU3oNYoZRLJFzMkwn9MfKTV4pwEoNe0-FjUnI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"sest\",\n    \"genre\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/movies/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"sest\",\n    \"genre\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/movies/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"movies",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 May 2024 20:26:03 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "183"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"movie updated\",\n    \"data\": {\n        \"id\": 2,\n        \"title\": \"sest\",\n        \"genre\": \"test\",\n        \"duration\": 120,\n        \"rating\": 4,\n        \"release_date\": \"2024-05-22T07:00:00+07:00\",\n        \"description\": \"test\"\n    }\n}"
+						},
+						{
+							"name": "401",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"sest\",\n    \"genre\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/movies/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"movies",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:23:24 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"invalid or expired jwt\"\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"sest\",\n    \"genre\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/movies/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"movies",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:23:44 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"update failed\",\n    \"error\": \"movie not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ4MjVlNGNjLTc1YzktNGJkMC1iOWVhLTEyOTBjNDA4MThkZiIsImV4cCI6MTcxNjMyNjEyNn0.R3hMyUPa3FXBRvDes3nyGF17q-71ZOxPHxjPouZUEKQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/movies/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/movies/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"movies",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:25:36 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"movie deleted\"\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/movies/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"movies",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:25:51 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"delete failed\",\n    \"error\": \"movie not found\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "showtime",
+			"item": [
+				{
+					"name": "create new showtime",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmODRkMmU4LWU5YzUtNDIzZC1iZGViLWNmMTZiMTUzZDQ5OSIsImV4cCI6MTcxNjM1NDUxNX0.1dErqjLy4D4dmVGV7YJOw-vKX_nh4adnktwDyyWCfh8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"date\": \"2024-05-22\",\n    \"start_time\": \"15:03\",\n    \"end_time\": \"15:20\",\n    \"movie_id\": 1,\n    \"studio_id\": 1,\n    \"cinema_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/showtime",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"showtime"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"date\": \"2024-05-22\",\n    \"start_time\": \"15:03\",\n    \"end_time\": \"15:20\",\n    \"movie_id\": 1,\n    \"studio_id\": 1,\n    \"cinema_id\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/showtime",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"showtime"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:17:06 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "203"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"showtime created\",\n    \"data\": {\n        \"id\": 19,\n        \"date\": \"2024-05-22T07:00:00+07:00\",\n        \"start_time\": \"22:10\",\n        \"end_time\": \"0000-01-01T22:27:12+07:07\",\n        \"movie_id\": 0,\n        \"studio_id\": 0,\n        \"cinema_id\": 0\n    }\n}"
+						},
+						{
+							"name": "400 - validation failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"date\": \"2024-05-22qweqweqw\",\n    \"start_time\": \"15:03\",\n    \"end_time\": \"15:20\",\n    \"movie_id\": 1,\n    \"studio_id\": 1,\n    \"cinema_id\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/showtime",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"showtime"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:30:21 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "314"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"validation failed\",\n    \"error\": \"code=400, message=parsing time \\\"\\\\\\\"2024-05-22qweqweqw\\\\\\\"\\\" as \\\"\\\\\\\"2006-01-02\\\\\\\"\\\": cannot parse \\\"qweqweqw\\\\\\\"\\\" as \\\"\\\\\\\"\\\", internal=parsing time \\\"\\\\\\\"2024-05-22qweqweqw\\\\\\\"\\\" as \\\"\\\\\\\"2006-01-02\\\\\\\"\\\": cannot parse \\\"qweqweqw\\\\\\\"\\\" as \\\"\\\\\\\"\\\"\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update new showtime",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmODRkMmU4LWU5YzUtNDIzZC1iZGViLWNmMTZiMTUzZDQ5OSIsImV4cCI6MTcxNjM1NDUxNX0.1dErqjLy4D4dmVGV7YJOw-vKX_nh4adnktwDyyWCfh8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"date\": \"2024-05-22\",\n    \"start_time\": \"15:03\",\n    \"end_time\": \"15:20\",\n    \"movie_id\": 1,\n    \"studio_id\": 1,\n    \"cinema_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/showtime/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"showtime",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"date\": \"2024-05-22\",\n    \"start_time\": \"15:03\",\n    \"end_time\": \"15:20\",\n    \"movie_id\": 1,\n    \"studio_id\": 1,\n    \"cinema_id\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/showtime/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"showtime",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:33:54 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "177"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"showtime updated\",\n    \"data\": {\n        \"id\": 2,\n        \"date\": \"2024-05-22T00:00:00Z\",\n        \"start_time\": \"15:03\",\n        \"end_time\": \"15:20\",\n        \"movie_id\": 2,\n        \"studio_id\": 3,\n        \"cinema_id\": 1\n    }\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"date\": \"2024-05-22\",\n    \"start_time\": \"15:03\",\n    \"end_time\": \"15:20\",\n    \"movie_id\": 1,\n    \"studio_id\": 1,\n    \"cinema_id\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/showtime/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"showtime",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:34:17 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"update failed\",\n    \"error\": \"showtime not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get all showtime",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmODRkMmU4LWU5YzUtNDIzZC1iZGViLWNmMTZiMTUzZDQ5OSIsImV4cCI6MTcxNjM1NTA5MX0.oCWPcN333ZA_Z9DI_PDvL-54MIvGzDWcVJwhWeKbemU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/showtime",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"showtime"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/showtime",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"showtime"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:18:58 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"all showtime data\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"date\": \"2024-01-15T00:00:00+07:00\",\n            \"start_time\": \"10:00\",\n            \"end_time\": \"12:30\",\n            \"movie_id\": 1,\n            \"studio_id\": 1,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 2,\n            \"date\": \"2024-01-16T00:00:00+07:00\",\n            \"start_time\": \"13:00\",\n            \"end_time\": \"15:30\",\n            \"movie_id\": 2,\n            \"studio_id\": 3,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 3,\n            \"date\": \"2024-01-17T00:00:00+07:00\",\n            \"start_time\": \"16:00\",\n            \"end_time\": \"18:30\",\n            \"movie_id\": 2,\n            \"studio_id\": 3,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 4,\n            \"date\": \"2024-01-18T00:00:00+07:00\",\n            \"start_time\": \"19:00\",\n            \"end_time\": \"21:30\",\n            \"movie_id\": 2,\n            \"studio_id\": 3,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 5,\n            \"date\": \"2024-01-19T00:00:00+07:00\",\n            \"start_time\": \"22:00\",\n            \"end_time\": \"00:30\",\n            \"movie_id\": 5,\n            \"studio_id\": 5,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 6,\n            \"date\": \"2024-01-20T00:00:00+07:00\",\n            \"start_time\": \"10:00\",\n            \"end_time\": \"12:30\",\n            \"movie_id\": 6,\n            \"studio_id\": 2,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 7,\n            \"date\": \"2024-01-21T00:00:00+07:00\",\n            \"start_time\": \"13:00\",\n            \"end_time\": \"15:30\",\n            \"movie_id\": 7,\n            \"studio_id\": 8,\n            \"cinema_id\": 2\n        },\n        {\n            \"id\": 8,\n            \"date\": \"2024-01-22T00:00:00+07:00\",\n            \"start_time\": \"16:00\",\n            \"end_time\": \"18:30\",\n            \"movie_id\": 8,\n            \"studio_id\": 6,\n            \"cinema_id\": 3\n        },\n        {\n            \"id\": 9,\n            \"date\": \"2024-01-23T00:00:00+07:00\",\n            \"start_time\": \"19:00\",\n            \"end_time\": \"21:30\",\n            \"movie_id\": 9,\n            \"studio_id\": 5,\n            \"cinema_id\": 2\n        },\n        {\n            \"id\": 10,\n            \"date\": \"2024-01-24T00:00:00+07:00\",\n            \"start_time\": \"22:00\",\n            \"end_time\": \"00:30\",\n            \"movie_id\": 10,\n            \"studio_id\": 10,\n            \"cinema_id\": 4\n        },\n        {\n            \"id\": 11,\n            \"date\": \"2024-05-22T07:00:00+07:00\",\n            \"start_time\": \"22:04\",\n            \"end_time\": \"22:04\",\n            \"movie_id\": 1,\n            \"studio_id\": 1,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 12,\n            \"date\": \"2024-05-22T07:00:00+07:00\",\n            \"start_time\": \"22:04\",\n            \"end_time\": \"22:04\",\n            \"movie_id\": 1,\n            \"studio_id\": 1,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 13,\n            \"date\": \"2024-05-22T07:00:00+07:00\",\n            \"start_time\": \"22:11\",\n            \"end_time\": \"22:12\",\n            \"movie_id\": 1,\n            \"studio_id\": 1,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 14,\n            \"date\": \"2024-05-22T07:00:00+07:00\",\n            \"start_time\": \"22:10\",\n            \"end_time\": \"22:12\",\n            \"movie_id\": 1,\n            \"studio_id\": 1,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 15,\n            \"date\": \"2024-05-22T07:00:00+07:00\",\n            \"start_time\": \"22:10\",\n            \"end_time\": \"22:27\",\n            \"movie_id\": 1,\n            \"studio_id\": 1,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 16,\n            \"date\": \"2024-05-22T07:00:00+07:00\",\n            \"start_time\": \"22:10\",\n            \"end_time\": \"22:27\",\n            \"movie_id\": 1,\n            \"studio_id\": 1,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 17,\n            \"date\": \"2024-05-22T07:00:00+07:00\",\n            \"start_time\": \"22:10\",\n            \"end_time\": \"22:27\",\n            \"movie_id\": 1,\n            \"studio_id\": 1,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 18,\n            \"date\": \"2024-05-22T07:00:00+07:00\",\n            \"start_time\": \"22:10\",\n            \"end_time\": \"22:27\",\n            \"movie_id\": 1,\n            \"studio_id\": 1,\n            \"cinema_id\": 1\n        },\n        {\n            \"id\": 19,\n            \"date\": \"2024-05-22T07:00:00+07:00\",\n            \"start_time\": \"22:10\",\n            \"end_time\": \"22:27\",\n            \"movie_id\": 1,\n            \"studio_id\": 1,\n            \"cinema_id\": 1\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/showtime/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"showtime",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:29:42 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "180"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"showtime found\",\n    \"data\": {\n        \"id\": 1,\n        \"date\": \"2024-01-15T00:00:00+07:00\",\n        \"start_time\": \"10:00\",\n        \"end_time\": \"12:30\",\n        \"movie_id\": 1,\n        \"studio_id\": 1,\n        \"cinema_id\": 1\n    }\n}"
+						},
+						{
+							"name": "404 - not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/showtime/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"showtime",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:30:37 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"showtime not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete showtime",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmODRkMmU4LWU5YzUtNDIzZC1iZGViLWNmMTZiMTUzZDQ5OSIsImV4cCI6MTcxNjM1NTQxNn0.l2cHIaIGOfgRS8rs0L3MHCrVd7wp6HwCVV15ByOVyd0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/showtime/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"showtime",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/showtime/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"showtime",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:31:19 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "50"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"showtime deleted\"\n}"
+						},
+						{
+							"name": "404",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/showtime/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"showtime",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:33:14 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"delete failed\",\n    \"error\": \"showtime not found\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"admin\",\n    \"email\": \"admin@gmail.com\",\n    \"password\": \"admin123\",\n    \"confirmation_password\": \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/register",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"123123\",\n    \"email\": \"adminq12211@gmaillll.com\",\n    \"password\": \"admin12345\",\n    \"confirmation_password\": \"admin12345\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/register",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 03:14:32 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "336"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"account created\",\n    \"data\": {\n        \"id\": \"6f84d2e8-e9c5-423d-bdeb-cf16b153d499\",\n        \"created_at\": \"22-05-2024 10:14:32\",\n        \"updated_at\": \"22-05-2024 10:14:32\",\n        \"deleted_at\": \"01-01-0001 00:00:00\",\n        \"username\": \"123123\",\n        \"password\": \"$2a$10$F6b8vZ7BnFcMgHuLa7WZ1e3qFyws.DN3UxbOKBojQk1ApO85zmHxy\",\n        \"email\": \"adminq12211@gmaillll.com\"\n    }\n}"
+						},
+						{
+							"name": "400 - email already used",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"123123\",\n    \"email\": \"adminq12211@gmaillll.com\",\n    \"password\": \"admin12345\",\n    \"confirmation_password\": \"admin12345\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/register",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"register"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:27:01 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "98"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"email already taken, please use another email or process to login\"\n}"
+						},
+						{
+							"name": "400 - username already used",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"123123\",\n    \"email\": \"adminq12211q@gmaillll.com\",\n    \"password\": \"admin12345\",\n    \"confirmation_password\": \"admin12345\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/register",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"register"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:27:16 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "87"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"username already taken, please choose another username\"\n}"
+						},
+						{
+							"name": "400 - password and confirmation password did not match",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"123123\",\n    \"email\": \"adminq12211q@gmaillll.com\",\n    \"password\": \"admin12345\",\n    \"confirmation_password\": \"qqweqwe\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/register",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"register"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:27:31 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"password and confirmation password do not match\"\n}"
+						},
+						{
+							"name": "400 - insecure password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"123123\",\n    \"email\": \"adminq12211q@gmaillll.com\",\n    \"password\": \"xx\",\n    \"confirmation_password\": \"xx\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/register",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"register"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:27:55 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "156"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"insecure password, try including more special characters, using uppercase letters, using numbers or using a longer password\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"admin12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"123123\",\n    \"password\": \"admin12345\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/login",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:28:36 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "184"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZmODRkMmU4LWU5YzUtNDIzZC1iZGViLWNmMTZiMTUzZDQ5OSIsImV4cCI6MTcxNjM1NTcxNn0.2cIEDUNKHUSo-jb-WM5iTprjpkeMSinNmrbll5qSzLE\"\n}"
+						},
+						{
+							"name": "400 - invalid email or password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"123123qqq\",\n    \"password\": \"admin12345\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/v1/login",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2024 04:28:49 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"message\": \"invalid email or password\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "localhost:3000",
+			"type": "string"
+		}
+	]
+}
